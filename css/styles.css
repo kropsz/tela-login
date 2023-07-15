@@ -1,6 +1,92 @@
-*{
-    font-family: "Roboto";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
 }
- h1{
-   color: blue;
+
+body {
+  display: flex;
+  flex-wrap: wrap; /*quebra linha */
+}
+
+#about-container {
+  flex: 1, 4;
+  padding: 2rem 4rem;
+}
+
+#brand{
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#brand img{
+  height: 50px;
+  margin-right: 0.6rem;
+}
+
+#exclusive{
+  text-transform: uppercase;
+  color: blue;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+#about-container h2{
+  font-size: 2.4rem;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+#date{
+  text-transform: uppercase;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+#description{
+  max-width: 500px;
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+#about-container h4{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#users-containers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.user-card{
+  border: 2px solid #ccc;
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+}
+
+.user-card img{
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.user-card .user-name{
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.user-card .user-role{
+  color: #3f3e3eaa;
+  font-size: 1rem;
+}
+
+#form-container {
+  flex: 1;
 }
