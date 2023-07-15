@@ -11,23 +11,23 @@ body {
 }
 
 #about-container {
-  flex: 1, 4;
+  flex: 1.4;
   padding: 2rem 4rem;
 }
 
-#brand{
+#brand {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
-#brand img{
+#brand img {
   height: 50px;
   margin-right: 0.6rem;
 }
 
-#exclusive{
+#exclusive {
   text-transform: uppercase;
   color: blue;
   font-weight: bold;
@@ -35,54 +35,54 @@ body {
   margin-bottom: 1rem;
 }
 
-#about-container h2{
+#about-container h2 {
   font-size: 2.4rem;
   max-width: 500px;
   margin-bottom: 1rem;
 }
 
-#date{
+#date {
   text-transform: uppercase;
   color: gray;
   margin-bottom: 1rem;
 }
 
-#description{
+#description {
   max-width: 500px;
   margin-bottom: 1rem;
   line-height: 1.4rem;
 }
 
-#about-container h4{
+#about-container h4 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-#users-containers{
+#users-containers {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.user-card{
+.user-card {
   border: 2px solid #ccc;
   padding: 1rem;
   width: 180px;
   text-align: center;
 }
 
-.user-card img{
+.user-card img {
   width: 120px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-.user-card .user-name{
+.user-card .user-name {
   font-weight: bold;
   margin-bottom: 0.6rem;
 }
 
-.user-card .user-role{
+.user-card .user-role {
   color: #3f3e3eaa;
   font-size: 1rem;
 }
@@ -90,11 +90,13 @@ body {
 #form-container {
   flex: 1;
   background-image: url("../img/pattern.png");
+  border-radius: 0.2rem;
+  border-color: #ffff;
   background-size: cover;
   color: #ffff;
 }
 
-#form-inner{
+#form-inner {
   margin: 3rem;
   padding: 3rem;
   border: 2px solid #ffff;
@@ -105,66 +107,142 @@ body {
   align-items: center;
 }
 
-#form-inner h3{
+#form-inner h3 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-#form-inner p{
+#form-inner p {
   margin-bottom: 1rem;
 }
 
-#register-form{
+#register-form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-#name-container{
+#name-container {
   display: flex;
   gap: 0.5rem;
 }
 
-#register-form input{
+#register-form input {
   padding: 0.8rem 0.6rem;
   border: none;
   border-radius: 1rem;
 }
 
-#email{
+#email {
   min-width: 100%;
 }
 
-#register-form input[type="submit"]{
+#register-form input[type="submit"] {
   background-color: transparent;
   color: #ffff;
   border: 2px solid #ffff;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.4s
+  transition: 0.4s;
 }
 
-#register-form input[type="submit"]:hover{
+#register-form input[type="submit"]:hover {
   background-color: #ffff;
   color: blue;
 }
 
-#benefits{
+#benefits {
   text-align: left;
   align-self: flex-start;
 }
 
-#benefits h4{
+#benefits h4 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-#benefits ul{
+#benefits ul {
   list-style-position: inside;
 }
 
-#benefits li{
+#benefits li {
   margin-bottom: 0.4rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../img/pattern.png);
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Mobile */
+
+@media (max-width: 510px) {
+  body {
+    flex-direction: column;
+  }
+
+  #form-inner {
+    padding: 1rem;
+  }
+
+  #about-container {
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+  #about-container h2 {
+    font-size: 3rem;
+  }
+
+  #exclusive,
+  #date {
+    font-size: 1.4rem;
+  }
+
+  #description {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  #about-container h4 {
+    font-size: 2rem;
+  }
+
+  #users-containers {
+    flex-direction: column;
+  }
+
+  .user-card {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .user-card img {
+    width: 180px;
+  }
+
+  .user-card .user-name {
+    font-size: 1.6rem;
+  }
+
+  .user-card .user-role {
+    font-size: 1.4rem;
+  }
+
+  #fomr-inner {
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  #register-form,
+  #name-container {
+    gap: 1rem;
+  }
 }
