@@ -89,4 +89,82 @@ body {
 
 #form-container {
   flex: 1;
+  background-image: url("../img/pattern.png");
+  background-size: cover;
+  color: #ffff;
+}
+
+#form-inner{
+  margin: 3rem;
+  padding: 3rem;
+  border: 2px solid #ffff;
+  border-radius: 1.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-inner h3{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#form-inner p{
+  margin-bottom: 1rem;
+}
+
+#register-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#name-container{
+  display: flex;
+  gap: 0.5rem;
+}
+
+#register-form input{
+  padding: 0.8rem 0.6rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+#email{
+  min-width: 100%;
+}
+
+#register-form input[type="submit"]{
+  background-color: transparent;
+  color: #ffff;
+  border: 2px solid #ffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s
+}
+
+#register-form input[type="submit"]:hover{
+  background-color: #ffff;
+  color: blue;
+}
+
+#benefits{
+  text-align: left;
+  align-self: flex-start;
+}
+
+#benefits h4{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#benefits ul{
+  list-style-position: inside;
+}
+
+#benefits li{
+  margin-bottom: 0.4rem;
 }
